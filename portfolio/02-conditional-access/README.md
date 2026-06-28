@@ -1,4 +1,4 @@
-# Project 2 - Conditional Access Baseline (Zero Trust)
+# Project 2 Conditional Access Baseline (Zero Trust)
 
 **Goal:** Build a Zero-Trust Conditional Access baseline that enforces MFA, blocks legacy authentication, and requires managed devices with a safe rollout and an emergency-access account.
 
@@ -15,15 +15,15 @@
 ## Proof
 | Evidence | File |
 |----------|------|
-| Conditional Access policy list | `proof/2-1-ca-policies.png` |
-| MFA policy detail | `proof/2-2-MFA-policy.png` |
-| MFA policy with break-glass exclusion | `proof/2-2-MFA-policy-excluded-break-glass.png` |
-| Break-glass account (Global Admin) | `proof/2-3-break-glass-account.png` |
-| Sign-in logs — CA applied | `proof/2-4-sign-in-logs.png` |
-| MFA required at sign-in | `proof/2-4-MFA-required.png` |
-| MFA satisfied | `proof/2-4-MFA-satisfied.png` |
-| MFA registration | `proof/2-4-MFA-setup.png` |
-| Test user login | `proof/2-4-testuser-login.png` |
+| Conditional Access policy list |![ConditionalAccess](proof/2-1-ca-policies.png) |
+| MFA policy detail |![MFA-policy](proof/2-2-MFA-policy.png) |
+| MFA policy with break-glass exclusion |![MFA-policy](proof/2-2-MFA-policy-excluded-break-glass.png) |
+| Break-glass account (Global Admin) | ![EmergencyAccount](proof/2-3-break-glass-account.png) |
+| Sign-in logs — CA applied | ![sing-in-logs](proof/2-4-sign-in-logs.png) |
+| MFA required at sign-in | ![MFA-Required](proof/2-4-MFA-required.png)|
+| MFA satisfied | ![MFA-Satisfied](proof/2-4-MFA-satisfied.png) |
+| MFA registration | ![MFA-Setup](proof/2-4-MFA-setup.png) |
+| Test user login | ![Test-login](proof/2-4-testuser-login.png) |
 
 ## Live enforcement proof
 During Autopilot enrollment, the device-compliance CA policy correctly blocked an unmanaged device ("You can't get there from here" error 53001), and enrollment succeeded once the device became managed. This is live evidence that the Zero-Trust control actually enforces, and the project documents the standard fix: excluding **Microsoft Intune Enrollment** from the require-compliant-device policy so devices can enrol and then become compliant.
