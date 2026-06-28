@@ -16,10 +16,10 @@ Cloud Sync is Microsoft's lightweight provisioning agent, but it **cannot config
 ## Proof
 | Evidence | File |
 |----------|------|
-| On-prem users synced to Entra ID | `proof/01-entra-id-onprem-users.png` |
-| Synced users visible in Entra (On-premises sync - Yes) | `proof/01-entra-id-users.png` |
-| Hybrid Entra Join configured | `proof/01-hybrid-entra-join.png` |
-| Device hybrid/Entra-joined (`dsregcmd /status`: AzureAdJoined YES, TpmProtected YES, DeviceAuthStatus SUCCESS) | `proof/01-azureadjoined.png` |
+| On-prem users synced to Entra ID |![On-PremUsers](proof/01-entra-id-onprem-users.png) |
+| Synced users visible in Entra (On-premises sync - Yes) |![EntraID-Users](proof/01-entra-id-users.png) |
+| Hybrid Entra Join configured |![Hybrid-entra-join](proof/01-hybrid-entra-join.png) |
+| Device hybrid/Entra-joined (`dsregcmd /status`: AzureAdJoined YES, TpmProtected YES, DeviceAuthStatus SUCCESS) |![azure-ad-joined](proof/01-azureadjoined.png) |
 
 ## Troubleshooting documented
 - **Kerberos `0x31 Invalid Credentials`** during the Entra Connect LDAP bind root cause was ~24h **VM clock skew** between SRV01 and DC01 (Kerberos tolerates ≤5 min). Fixed the domain time hierarchy and anchored the PDC emulator to an external NTP server.
