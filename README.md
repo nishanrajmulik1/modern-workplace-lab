@@ -4,7 +4,7 @@ An end-to-end **Microsoft Modern Workplace** lab built from bare metal to cloud,
 
 Built and operated under a fictional company, **MyLogiGroup** (`corp.mylogigroup.online` on-prem AD / `MyLogiGroup.onmicrosoft.com` cloud tenant), on a self-hosted **Proxmox** virtualisation host with **pfSense**-segmented VLAN networking.
 
-> **Why this lab exists:** to demonstrate the exact stack used by Modern Workplace / End-User-Computing engineering teams - Microsoft Entra ID, Intune, Windows 365/Autopilot, Conditional Access, and application deployment - with real, screenshot-backed proof rather than tutorial theory.
+> **Why this lab exists:** to demonstrate the exact stack used by Modern Workplace / End-User-Computing engineering teams - Microsoft Entra ID, Intune, Windows 365/Autopilot, Conditional Access, and application deployment with real, screenshot-backed proof rather than tutorial theory.
 
 ---
 
@@ -56,14 +56,14 @@ Proxmox Virtualisation Environment
 
 ## Real-world troubleshooting (the part that matters)
 
-This lab wasn't frictionless - and that's the point. Documented and solved issues include:
+This lab wasn't frictionless, and that's the point. Documented and solved issues include:
 
 - **DNS suffix poisoning** - pfSense DHCP was stamping a bad domain suffix onto clients, mangling Microsoft endpoint resolution and blocking Autopilot; corrected the DHCP domain-name field.
 - **Cloud Sync vs Entra Connect Sync** - identified that Cloud Sync cannot perform Hybrid Entra Join, and migrated to full Entra Connect Sync.
 - **SMBIOS serial collision** - Autopilot device registered with a placeholder serial (`SMBIOS_STRING_INDEX_0`); set a real SMBIOS serial in Proxmox and re-registered.
 - **App packaging detection mismatch** - a deployment failed because an MSI detection rule was applied to an EXE-packaged app; corrected by repackaging with the vendor MSI and the real product code.
 
-Each is written up in the relevant project folder.
+Each project is documented in its relevant project folder.
 
 ---
 
