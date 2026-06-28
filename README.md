@@ -33,11 +33,11 @@ Proxmox Virtualisation Environment
 | # | Project | Skills demonstrated | Status |
 |---|---------|--------------------|--------|
 | 0 | [Foundation - Tenant, Licensing & Groups](portfolio/00-foundation/README.md) | M365 E3, Entra ID P1, custom domain, dynamic device groups | ✅ Complete |
-| 1 | [Hybrid Identity - Entra Connect](./01-hybrid-identity/README.md) | Entra Connect Sync, password hash sync, Hybrid Entra Join | ✅ Complete |
-| 2 | [Conditional Access Baseline](./02-conditional-access/README.md) | Zero Trust, MFA, legacy-auth block, break-glass, device compliance | ✅ Complete |
-| 3 | [Intune Enrollment + Autopilot](./03-intune-autopilot/README.md) | Windows Autopilot (user-driven), Intune MDM, ESP, compliance | ✅ Complete |
-| 4 | [Windows 11 SOE + Security Baselines](./04-windows11-soe/README.md) | Security baselines, BitLocker + Entra key escrow, Defender, hardening | 🔜 In progress |
-| 5 | [Application Packaging (PSADT + Win32)](./05-app-packaging/README.md) | PSADT, `.intunewin`, detection rules, deployment rings, MSI/EXE/PowerShell | ✅ Complete |
+| 1 | [Hybrid Identity - Entra Connect](portfolio/01-hybrid-identity/README.md) | Entra Connect Sync, password hash sync, Hybrid Entra Join | ✅ Complete |
+| 2 | [Conditional Access Baseline](portfolio/02-conditional-access/README.md) | Zero Trust, MFA, legacy-auth block, break-glass, device compliance | ✅ Complete |
+| 3 | [Intune Enrollment + Autopilot](portfolio/03-intune-autopilot/README.md) | Windows Autopilot (user-driven), Intune MDM, ESP, compliance | ✅ Complete |
+| 4 | [Windows 11 SOE + Security Baselines](portfolio/04-windows11-soe/README.md) | Security baselines, BitLocker + Entra key escrow, Defender, hardening | 🔜 In progress |
+| 5 | [Application Packaging (PSADT + Win32)](portfolio/05-app-packaging/README.md) | PSADT, `.intunewin`, detection rules, deployment rings, MSI/EXE/PowerShell | ✅ Complete |
 
 ---
 
