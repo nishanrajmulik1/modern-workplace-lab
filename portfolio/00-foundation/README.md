@@ -14,8 +14,8 @@ Microsoft 365 E3 includes **Microsoft Entra ID P1** (Conditional Access, MFA), *
 ## Proof
 | Evidence | File |
 |----------|------|
-| Custom domain verified in tenant | `proof/00-domain-verified.png` |
-| Microsoft 365 E3 licensing | `proof/00-e3-licensing.png` |
+| Custom domain verified in tenant | ![Domain verified](proof/00-domain-verified.png) |
+| Microsoft 365 E3 licensing | ![E3 licensing](proof/00-e3-licensing.png) |
 
 ## Skills
 M365 administration · Entra ID P1 · domain verification · dynamic device groups · licensing design
