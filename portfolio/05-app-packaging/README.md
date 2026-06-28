@@ -15,19 +15,19 @@
 ## Proof
 | Evidence | File |
 |----------|------|
-| PSADT packaging folder structure (per-app) | `proof/5-1-packaging-folder.png` |
-| `.intunewin` produced by Content Prep Tool | `proof/5-2-intunewin.png` |
-| PSADT script 7-Zip | `proof/5-3-7-zip.png` |
-| PSADT script Notepad++ | `proof/5-3-notepad++.png` |
-| PSADT script VLC (MSI) | `proof/5-3-VLC.png` |
-| Apps assigned in Intune | `proof/5-4-intune-apps-assigned.png` |
-| Company Portal (Available ring) | `proof/5-7-company-portal.png` |
-| Required apps installed | `proof/5-7-company-required-apps.png` |
-| 7-Zip installed on endpoint | `proof/5-8-7-zip-installed.png` |
-| Notepad++ installed | `proof/5-8-notepad-installed.png` |
-| VLC installed (MSI) | `proof/5-8-vlc-installed-msi.png` |
-| VLC install (pending state) | `proof/5-8-vlc-installpending.png` |
-| All apps installed successfully | `proof/5-8-all-apps-installedsuccessfully.png` |
+| PSADT packaging folder structure (per-app) | ![packaging-folder](proof/5-1-packaging-folder.png) |
+| `.intunewin` produced by Content Prep Tool | ![itunewin](proof/5-2-intunewin.png) |
+| PSADT script 7-Zip | ![7-zip](proof/5-3-7-zip.png) |
+| PSADT script Notepad++ | ![notepad++](proof/5-3-notepad++.png) |
+| PSADT script VLC (MSI) | ![VLC](proof/5-3-VLC.png) |
+| Apps assigned in Intune | ![Intune-apps](proof/5-4-intune-apps-assigned.png) |
+| Company Portal (Available ring) | ![Company-portal](proof/5-7-company-portal.png) |
+| Required apps installed | ![Required-app](proof/5-7-company-required-apps.png) |
+| 7-Zip installed on endpoint | ![7-zip-installed](proof/5-8-7-zip-installed.png) |
+| Notepad++ installed | ![Notepad](proof/5-8-notepad-installed.png) |
+| VLC installed (MSI) | ![VLC](proof/5-8-vlc-installed-msi.png) |
+| VLC install (pending state) | ![vlc-pending](proof/5-8-vlc-installpending.png) |
+| All apps installed successfully | ![Success-installed](proof/5-8-all-apps-installedsuccessfully.png) |
 
 ## Troubleshooting documented (the real-world packaging lesson)
 A VLC deployment initially **failed** because an **MSI detection rule was applied to an EXE-packaged app**, the install method and detection method didn't match. Diagnosed via the Intune Management Extension log, then corrected by **repackaging with the vendor MSI** and using the **real MSI product code** for detection. The install-method-vs-detection-method mismatch is the single most common Win32 packaging failure; documenting the fix shows real operational understanding.
