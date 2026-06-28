@@ -13,11 +13,11 @@
 ## Proof
 | Evidence | File |
 |----------|------|
-| Autopilot device Profile status = Assigned | `proof/3-1-MLG-Client01-Profile-Assigned.png` |
-| Autopilot deployment profile (user-driven) | `proof/3-2-AP-MLG-User-Driven.png` |
-| Enrollment Status Page during OOBE | `proof/3-2-AP-OOBE.png` |
-| OOBE provisioning completed | `proof/3-2-AP-OOBE-Completed.png` |
-| Device Entra-joined (`dsregcmd /status`) | *(see `01-azureadjoined.png`)* |
+| Autopilot device Profile status = Assigned | ![Profile-Assigned](proof/3-1-MLG-Client01-Profile-Assigned.png) |
+| Autopilot deployment profile (user-driven) | ![MLG-User-Driven](proof/3-2-AP-MLG-User-Driven.png) |
+| Enrollment Status Page during OOBE | ![OOBE](proof/3-2-AP-OOBE.png) |
+| OOBE provisioning completed | ![OOBE-Completed](proof/3-2-AP-OOBE-Completed.png) |
+| Device Entra-joined (`dsregcmd /status`) | ![azurejoined](../01-hybrid-identity/proof/01-azureadjoined.png) |
 
 ## Troubleshooting documented
 - **SMBIOS serial collision** the VM registered with a placeholder serial (`SMBIOS_STRING_INDEX_0`). Set a real SMBIOS serial in Proxmox, re-captured the hash, and re-imported.
