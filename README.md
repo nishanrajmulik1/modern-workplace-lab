@@ -8,6 +8,8 @@ Built and operated under a fictional company, **MyLogiGroup** (`corp.mylogigroup
 
 ---
 
+![OOBE-Autopilot](portfolio/03-intune-autopilot/proof/3-2-AP-OOBE-Completed.png)
+
 ## Architecture at a glance
 
 ```
@@ -38,6 +40,8 @@ Proxmox Virtualisation Environment
 | 5 | [Application Packaging (PSADT + Win32)](./05-app-packaging) | PSADT, `.intunewin`, detection rules, deployment rings, MSI/EXE/PowerShell | ✅ Complete |
 
 ---
+
+![Intune](/portfolio/03-intune-autopilot/proof/5-8-Intune-Compliance.png)
 
 ## Tooling & technologies
 
